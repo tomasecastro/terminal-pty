@@ -1,0 +1,22 @@
+{
+  "name": "@opencode/terminal-pty-plugin",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Local PTY shell for OpenCode with an AI assistant: the plugin owns read and write, with credential blinding, per-session grants and human approval per command, plus a visible terminal panel.",
+  "exports": {
+    "./server": "./src/index.ts",
+    "./gui-experimental": "./gui-experimental.cjs"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "pty",
+    "terminal",
+    "shell",
+    "node-pty"
+  ],
+  "dependencies": {
+    "@lydell/node-pty": "1.2.0-beta.18"
+  }
+}
